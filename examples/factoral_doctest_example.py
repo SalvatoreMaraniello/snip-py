@@ -32,6 +32,15 @@ def factorial(n):
     Traceback (most recent call last):
         ...
     OverflowError: n too large
+
+    In this test, we use +ELLIPSIS and we split the input command across multiple 
+    lines
+    >>> for i in range(4): #doctest: +ELLIPSIS
+    ...     print(factorial(i))
+    1
+    1
+    ...
+    6
     """
 
     import math

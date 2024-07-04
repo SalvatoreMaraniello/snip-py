@@ -1,0 +1,10 @@
+ipython
+numpy
+pandas
+scikit-learn
+statsmodels
+# for matplotlib
+# wheel 
+matplotlib
+# others
+PyYAML

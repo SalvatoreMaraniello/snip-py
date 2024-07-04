@@ -27,11 +27,21 @@ in the module where the function is defined.
 
 You can now run tests using `python MODULE-NAME.py` (use option `-v` for verbose), or `python -m doctest -v MODULE-NAME.py` (this may not work if module is part of a package).
 
+If an example requires multiple lines of code, use `...` to indicate the input command continues. If the output is too large and you want to verify it only based on first output lines, use the `+ELLIPSIS` directive.
+```python
+>>> for i in range(4): #doctest: +ELLIPSIS
+...     print(factorial(i))
+1
+1
+...
+6
+```
+
+You can also have `doctest` files inside your project, as shown in [this example](https://github.com/fluentpython/example-code-2e/tree/master/01-data-model). The usage is the same: `python -m doctest -v FILENAME.doctest`. 
+
 
 
 # Docstring styles
-
-- `doctest` module: searches for pieces of text that look like interactive sessions. :) 
 
 - `numpydoc`: `style for docstring`
 
