@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import math
 
+
+'''A set of sample numbers with outcome for testing'''
 PRIME_FIXTURE = [
     (2, True),
     (142702110479723, True),
@@ -23,6 +25,7 @@ PRIME_FIXTURE = [
     (9999999999999917, True),
     (9999999999999999, False),
 ]
+
 
 # tag::IS_PRIME[]
 def is_prime(n: int) -> bool:
