@@ -2,7 +2,7 @@
 import math
 
 
-'''A set of sample numbers with outcome for testing'''
+"""A set of sample numbers with outcome for testing"""
 PRIME_FIXTURE = [
     (2, True),
     (142702110479723, True),
@@ -28,7 +28,7 @@ PRIME_FIXTURE = [
 
 
 # tag::IS_PRIME[]
-def is_prime(n: int) -> bool:
+def check_is_prime(n: int) -> bool:
     if n < 2:
         return False
     if n == 2:
@@ -41,12 +41,14 @@ def is_prime(n: int) -> bool:
         if n % i == 0:
             return False
     return True
+
+
 # end::IS_PRIME[]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     for n, prime in PRIME_FIXTURE:
-        prime_res = is_prime(n)
+        prime_res = check_is_prime(n)
         assert prime_res == prime
         print(n, prime)
