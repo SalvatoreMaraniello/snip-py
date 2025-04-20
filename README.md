@@ -1,27 +1,31 @@
 # snip-py
+
 A collection of snippets, notes, examples and links for Python developers and data scientist/analysts.
 
 ## Setup
-This requires python 3.11.4 or higher. You can use `pyenv` to manage python versions. 
 
-- Examples regarding pure python (mostly inspired from (Fluent Python)[https://github.com/fluentpython/example-code-2e]), do not require any external package.
+The code in this repo has been tested with python 3.11.4 or higher. In general, examples regarding
+pure python (mostly inspired from (Fluent Python)[https://github.com/fluentpython/example-code-2e]),
+do not require any external package. You can use `pyenv` to manage python versions.
 
-- For examples related to common python libraries, (e.g. `pandas`, `plotly`, `seaborn`), build a python environment as:
-    ```sh
-    ENV_NAME=venv
-    python -m venv $ENV_NAME
-    source ${ENV_NAME}/bin/activate
-    pip install --upgrade pip
-    pip install -r requirements.txt
-    ```
+Some folders on specific topics may require their own environments:
+
+- In [examples](examples), we have some snippets about common python libraries, (e.g. `pandas`, `plotly`, `seaborn`); for these, build a python environment as:
+
+  ```sh
+  cd examples
+  python -m venv venv
+  source venv/bin/activate
+  pip install --upgrade pip
+  pip install -r requirements.txt
+  ```
+
+- A different environment is used in the [tf-keras-examples](tf-keras-examples) folder; you can activate in a similar way.
 
 ## Documentation and testing
 
 - [doctest](docs/documentation.md)
 
-
-
 ## Recognitions
 
 A lot of examples are taken, or inspired, from (Fluent Python)[https://github.com/fluentpython/example-code-2e].
-
