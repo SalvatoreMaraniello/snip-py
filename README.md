@@ -20,7 +20,7 @@ Some folders on specific topics may require their own environments:
   pip install -r requirements.txt
   ```
 
-- A different environment is used in the [tf-keras-examples](tf-keras-examples) folder; you can activate in a similar way.
+- A different environment is used in the [tf-keras-examples](tf-keras-examples) folder; you can activate in a similar way. See also the local [README.md](tf-keras-examples/README.md) for more info on optimising the installation for GPU acceleration.
 
 ## Documentation and testing
 
