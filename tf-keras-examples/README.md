@@ -1,3 +1,19 @@
+# Set up this environemnt
+
+```sh
+cd tf-keras-examples
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+For working with VS code, is may also be worth registering the environment:
+
+```sh
+python -m ipykernel install --user --name=snippy-tf-keras-examples --display-name="Python (Snippy - tf keras)"
+```
+
 # Installing Tensorflow
 
 ```
